@@ -18,7 +18,7 @@ export default function Root() {
           />
           <div className={styles.headerLinkGroup}>
             <Link to='../?index'>Home</Link>
-            <a href=''>Store</a>
+            <Link to='../store'>Store</Link>
             <img src='' alt='Shopping Cart' />
           </div>
         </header>

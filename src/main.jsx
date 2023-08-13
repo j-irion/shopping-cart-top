@@ -7,6 +7,7 @@ import Homepage, { loader as homepageLoader } from './routes/homepage/homepage';
 import ProductPage, {
   loader as productpageLoader,
 } from './routes/productpage/productpage';
+import Store, { loader as storeLoader } from './routes/store/store';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
         path: 'product/:productId',
         element: <ProductPage />,
         loader: productpageLoader,
+      },
+      {
+        path: 'store',
+        element: <Store />,
+        loader: storeLoader,
       },
     ],
   },

@@ -1,0 +1,41 @@
+.flexContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+}
+
+.productCard {
+  width: 150px;
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.productCard > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.productCard > div {
+  height: 117px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productCard > div > p {
+  margin: 0;
+}
+
+.productCard > div > h4 {
+  margin: 0;
+}

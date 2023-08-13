@@ -21,7 +21,7 @@ export default function Homepage() {
             selection of products, unbeatable prices, and exceptional customer
             service. Shop now and transform your shopping journey with us.
           </p>
-          <button>Shop Now</button>
+          <Link to='store'>Shop Now</Link>
         </div>
         <div className={`${styles.subContainer} ${styles.subContainer2}`}>
           <h2>Featured Items</h2>

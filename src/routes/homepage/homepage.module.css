@@ -31,14 +31,15 @@
   margin: 0;
 }
 
-.subContainer1 > button {
-  width: 150px;
-  height: 50px;
+.subContainer1 > a {
+  padding: 15px 30px;
   border-radius: 10px;
   background-color: #2a1778;
   border: none;
   font-size: 20px;
   color: white;
+  text-align: center;
+  text-decoration: none;
 }
 
 .subContainer2 {
