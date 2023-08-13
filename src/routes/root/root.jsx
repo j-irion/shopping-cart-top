@@ -2,7 +2,7 @@ import React from 'react';
 import GitHubIcon from '../../assets/github.svg';
 import Logo from '../../assets/logo.png';
 import styles from './root.module.css';
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 
 export default function Root() {
   return (
@@ -17,7 +17,7 @@ export default function Root() {
             className={styles.searchbar}
           />
           <div className={styles.headerLinkGroup}>
-            <a href=''>Home</a>
+            <Link to='../?index'>Home</Link>
             <a href=''>Store</a>
             <img src='' alt='Shopping Cart' />
           </div>
