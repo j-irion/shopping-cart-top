@@ -21,6 +21,10 @@
   height: 60px;
 }
 
+.header > div > a > img {
+  height: 40px;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
