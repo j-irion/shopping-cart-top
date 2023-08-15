@@ -40,10 +40,10 @@ export default function ShoppingCart() {
         {cart.length === 0 && <p>Your cart is empty</p>}
         {cart.map((item) => (
           <div key={item.id} className={styles.item}>
-            <div>
+            <div onClick={() => navigate(`../product/${item.id}`)}>
               <img src={item.item.image} />
             </div>
-            <div>
+            <div onClick={() => navigate(`../product/${item.id}`)}>
               <h4>{item.item.title}</h4>
               <p>${item.item.price * item.amount}</p>
             </div>
