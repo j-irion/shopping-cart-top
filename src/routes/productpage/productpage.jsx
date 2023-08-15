@@ -28,7 +28,7 @@ export default function ProductPage() {
           <div>
             <h2>{product.title}</h2>
             <p>${product.price}</p>
-            <input type='number' name='amount' id='amount' />
+            <input type='number' name='amount' id='amount' defaultValue={1} />
             <button onClick={handleClick}>Add to cart</button>
           </div>
           <div>
