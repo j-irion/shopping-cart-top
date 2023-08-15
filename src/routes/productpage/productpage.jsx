@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import styles from './productpage.module.css';
+import { addToCart } from '../../cart';
 
 export async function loader({ params }) {
   const product = await fetch(
@@ -13,6 +14,12 @@ export async function loader({ params }) {
 export default function ProductPage() {
   const product = useLoaderData();
 
+  const handleClick = () => {
+    const input = document.getElementById('amount');
+    addToCart(product, input.value);
+    input.value = 0;
+  };
+
   return (
     <>
       <div className={styles.flexContainer}>
@@ -22,7 +29,7 @@ export default function ProductPage() {
             <h2>{product.title}</h2>
             <p>${product.price}</p>
             <input type='number' name='amount' id='amount' />
-            <button>Add to cart</button>
+            <button onClick={handleClick}>Add to cart</button>
           </div>
           <div>
             <h2>Description</h2>

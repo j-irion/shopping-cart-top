@@ -8,6 +8,9 @@ import ProductPage, {
   loader as productpageLoader,
 } from './routes/productpage/productpage';
 import Store, { loader as storeLoader } from './routes/store/store';
+import ShoppingCart, {
+  loader as shoppingCartLoader,
+} from './routes/shoppingcart/shoppingcart';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +28,7 @@ const router = createBrowserRouter([
         element: <Store />,
         loader: storeLoader,
       },
+      { path: 'cart', element: <ShoppingCart />, loader: shoppingCartLoader },
     ],
   },
 ]);
